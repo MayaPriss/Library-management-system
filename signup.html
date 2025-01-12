@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./CSS/signup.css"/> 
+  <link rel="stylesheet" href="./CSS/signup_nav.css">  
+</head>
+<body>
+  <!-- SideNav-->
+  <div class="xwrapx">  
+  <main>
+    <aside>
+      <ul class="asideList">
+        <li><a href="landing_page.html" class="asideAnchor">Home</a></li>
+        <div class="dropdown-menu">
+          <button class="menu-btn">Collections ▼</button>
+            <div class="menu-content">
+              <a class="links-hidden" href="viewbook.php">View Books</a>
+              <a class="links-hidden" href="addbook.php">Add Books</a>
+              <a class="links-hidden" href="removebook.php">Remove Books</a>
+              <a class="links-hidden" href="updatebook.php">Update Books</a>
+            </div>
+        </div>
+        <li><a href="about.html" class="asideAnchor2">About</a></li>
+        <li><a href="profile.html" class="asideAnchor">Profile</a></li>
+        <li><a href="login.html" class="asideAnchor">Login</a></li>
+        <li><a href="signup.html" class="asideAnchor">Sign Up</a></li>
+        <li><a href="settings.html" class="asideAnchor">Setting</a></li>
+      </ul>
+    </aside>
+    <section>
+      <input type="checkbox" id="myInput">
+      <label for="myInput">
+        <span class="bar top"></span>
+        <span class="bar middle"></span>
+        <span class="bar bottom"></span>
+      </label>
+      
+      <!--Content -->
+      <div class="content">
+
+        <!-- TopNav -->
+        <div class="topbar">
+          <div class="title">
+            <h1 class="toptitle">Sign Up</h1>
+          </div>
+        </div>
+
+        <!--Container -->
+        <div class="container">
+          <form id="form" class="form">
+            <h1>Create Your Account Now</h1>
+            <hr>
+    
+            <div class="form-control">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" placeholder="First Name">
+              <small>Error message</small>
+            </div>
+    
+            <div class="form-control">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" placeholder="Last Name">
+              <small>Error message</small>
+            </div>
+    
+            <div class="form-control">
+              <label for="username">Username</label>
+              <input type="text" id="username" placeholder="Username">
+              <small>Error message</small>
+            </div>
+    
+            <div class="form-control">
+              <label for="phoneno">Phone Number</label>
+              <input type="text" id="phoneno" placeholder="Phone Number">
+              <small>Error message</small>
+            </div>
+    
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input type="text" id="email" placeholder="E-mail">
+              <small>Error message</small>
+            </div>
+    
+            <div class="form-control">
+              <label for="password">Password</label>
+              <input type="password" id="password" placeholder="Password">
+              <small>Error message</small>
+            </div>
+  
+            <div class="form-control">
+              <label for="password2">Confirm Password</label>
+              <input type="password" id="password2" placeholder="Confirm Password">
+              <small>Error message</small>
+            </div>
+    
+            <button>Create Account</button>
+    
+            <p>By creating an account, you agree to Library' 
+              <a href="#">Terms and Conditions & Policy Privacy</a>
+            </p>
+          </form>
+        </div>
+        <script type="text/javascript" src="./JavaScript/signup.js"></script>
+      </div>
+    </section>
+  </main>
+  </div>
+</body>
+</html>

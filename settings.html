@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./CSS/settings.css"/>
+</head>
+<body>
+  <div class="xwrapx">  
+  <main>
+    <aside>
+      <ul class="asideList">
+        <li><a href="" class="asideAnchor">Home</a></li>
+        <div class="dropdown-menu">
+          <button class="menu-btn">Collections ▼</button>
+            <div class="menu-content">
+              <a class="links-hidden" href="viewbook.php">View Books</a>
+              <a class="links-hidden" href="addbook.php">Add Books</a>
+              <a class="links-hidden" href="removebook.php">Remove Books</a>
+              <a class="links-hidden" href="updatebook.php">Update Books</a>
+            </div>
+        </div>
+        <li><a href="about.html" class="asideAnchor2">About</a></li>
+        <li><a href="profile.html" class="asideAnchor">Profile</a></li>
+        <li><a href="login.html" class="asideAnchor">Login</a></li>
+        <li><a href="signup.html" class="asideAnchor">Sign Up</a></li>
+        <li><a href="settings.html" class="asideAnchor">Setting</a></li>
+      </ul>
+    </aside>
+    <section>
+      <input type="checkbox" id="myInput">
+      <label for="myInput">
+        <span class="bar top"></span>
+        <span class="bar middle"></span>
+        <span class="bar bottom"></span>
+      </label>
+      
+        <div class="content">
+          <h1>Settings</h1>
+          <button onclick="topFunction()" id="myTop" title="Go to top">Back to top</button>
+            <div class="container">
+              <div class="card-body">
+                <nav>
+                  <ul>
+                    <li><a href="#profile" data-toggle="tab"><h3>Profile Information</h3>
+                    </a></li>
+                    <li><a href="#account" data-toggle="tab"><h3>Account Settings</h3>
+                    </a></li>
+                    <li><a href="#security" data-toggle="tab"><h3>Security</h3>
+                    </a></li>
+                    <li><a href="#notification" data-toggle="tab"><h3>Notification</h3>
+                    </a></li>
+                    </ul>
+                </nav>
+              </div>
+              </div>     
+
+          <div class="profile-info">
+            <div class="card" id="profile">
+              <h2>YOUR PROFILE INFORMATION</h2>
+              <hr>
+              <form id ="nameForm">
+                <div class="name-info">
+                  <label for="fullName">Full Name : </label>
+                  <input type="text" class="form-control" id="fullName" aria-describedby="fullNameHelp" placeholder="Enter your full name" >
+                  <small id="fullNameHelp" class="form-text text-muted">(Your name may appear around here where you are mentioned. You can change or remove it at any time.)</small>
+                </div>
+                <br>
+                <div class="location-info">
+                  <label for="location">Location : </label>
+                  <input type="text" class="form-control" id="location" placeholder="Enter your location" >
+                </div>
+                <div class="optional">
+                <p><strong><small>All of the fields on this page are optional and can be deleted at any time, and by filling them out, you're giving us consent to share this data wherever your user profile appears.</strong></small></p>
+                </div>
+                <button type="button" button onclick="myUpdate()" button class="up-profile" >Update Profile</button>
+                <button type="reset" button onclick="myReset()" button class = "resetchanges">Reset Changes</button>
+                <p id="resetAcc"></p>
+              </form>            
+            </div>
+
+            <div class="card" id="account">
+              <h2>ACCOUNT SETTINGS</h2>
+              <hr>
+              <form>
+                <div class="username-info">
+                  <label for="username">Username : </label>
+                  <input type="text" class="username" id="username" aria-describedby="usernameHelp" placeholder="Enter your username" >
+                  <small id="usernameHelp" class="form-text text-muted"> (After changing your username, your old username becomes available for anyone else to claim.)</small>
+                </div>
+                <hr>
+                <div class="delete-acc">
+                  <label class="d-block text-danger">Delete Account</label>
+                <div class="optional">
+                  <p><strong><small>Once you delete your account, there is no going back. Please be certain.</strong></small></p>
+                </div>
+                <button class="delete-button" button type="button" button onclick="myFunction()";>Delete Account</button>
+                <p id="deleteAcc"></p>
+                </div>
+              </form>
+            </div>
+
+            <div class="card1" id="security">
+              <h2>SECURITY SETTINGS</h2>
+              <hr>
+              <form>
+                <div class="change-password">
+                  <label type="password" >Change Password : </label>
+                  <input type="password" id="password" placeholder="Enter your old password"  >
+                  <input type="password" id="password" class="form-control mt-1" placeholder="New password">
+                  <input type="password" id="password" class="form-control mt-1" placeholder="Confirm new password">
+                  <p id="warning">WARNING! Caps lock is ON.</p>
+                </div>
+                <button type="button" class="updatep-button" button onclick="myPassword()"; >Update Password</button>
+              </form>
+
+              <hr>
+
+              <form>
+                <div class="two-factor-authentication">
+                  <label class="authentication">Two Factor Authentication : </label>
+                  <button class="auth-button" button onclick= "myAuthentication()" button type="button">Enable two-factor authentication</button>
+                  <p id= "authButton"></p>
+                  <div class = "optional">
+                  <p><strong><small>Two-factor authentication adds an additional layer of security to your account by requiring more than just a password to log in.</strong></small></p>
+                </div>
+                </div>
+              </form>
+
+              <hr>
+
+              <form>
+                <div class="activity-sessions">
+                  <label class="sessions">Sessions</label>
+                  <div class = "optional">
+                  <p><strong><small>This is a list of devices that have logged into your account. Revoke any sessions that you do not recognize.</strong></small></p>
+                  </div>
+                      <div>
+                        <h6 class="location">Kuala Lumpur, Malaysia </h6>
+                        <small class="text-muted">Your current session last seen in Malaysia</small>
+                      </div>
+                      <button class="info-button" type="button">More info</button>
+                    </li>
+                  </ul>
+                </div>
+              </form>
+            </div>
+
+            <div class="card" id="notification">
+              <h2>NOTIFICATION SETTINGS</h2>
+              <hr>
+              <form>
+                <div class="notification">
+                  <label class="sms-notif">SMS Notifications : </label>
+                  <li class="list-notif">
+                      Updates 
+                      <div class="update-button">
+                        <input type="checkbox" class="update" id="update">
+                        <label class="update-label" for="update"></label>
+                      </div>
+                      
+                    </li>
+                    <li class="list-reminder">
+                      Reminders
+                      <div class="reminder-button">
+                        <input type="checkbox" class="reminder" id="reminder" checked="">
+                        <label class="reminder-label" for="reminder"></label>
+                      </div>
+                    </li>
+                    <li class="list-event">
+                      Events
+                      <div class="event-button">
+                        <input type="checkbox" class="event" id="event" checked="">
+                        <label class="event-label" for="event"></label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </form>
+          </div>
+        </section>
+      </main>
+    </div>
+  <script type="text/javascript" src="./JavaScript/settings.js"></script>
+</body>
+</html>

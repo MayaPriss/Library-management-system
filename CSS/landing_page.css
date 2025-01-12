@@ -1,0 +1,425 @@
+body {
+    background-color: #e8f5ff;
+    color: #1a202c;
+    margin: 0;
+    margin-bottom: 1cm;
+    font-family: Calibri;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 900px;
+  height: 100px;
+  position: relative;
+  margin: auto;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* The dots */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 350px 10px;
+  margin-left: 200px;
+  margin-bottom: 50px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display:inline-block;
+  transition: background-color 3s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* Box shadow:
+Library pic
+Div
+3 books
+
+Button:
+JS Designs
+
+Extra:
+More Books */
+#home {
+    background-color: #1a202c;
+    color: white;
+    box-shadow: 0px 4px 8px 0px grey;
+    height: 85px;
+    font-size: 50px;
+    margin: 0;
+    line-height: 10vh;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* 2 divs part */
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.child:first-child {
+    margin-right: 20px;
+}
+
+img {
+    width: 900px;
+    height: 400px;
+    margin: 10px;
+    box-shadow: 3px 3px 3px grey
+}
+
+#box {
+    text-align: left;
+    margin: 0 auto;
+    padding: 2px 16px;
+    background-color: #fff;    
+    border-radius: 18px;
+    box-shadow: 1px 1px 8px 0 grey;
+    margin-bottom: 20px;
+    padding: 20px 70px 20px 100px;
+    width: 50%;
+    height: 220px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);  
+}
+
+.box-stuff {
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+#myButton {
+    background-color: darkgrey;
+    color: black;
+    border: solid grey 1px;
+    cursor: pointer;
+    padding: 10px 15px;
+    display: inline-block;
+    margin: 15px;
+    border: solid white 0.5px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 6px 7px 40px -4px rgba(0, 0, 0, 0.2);
+}
+
+#myButton:hover {
+    background-color: blueviolet;
+    box-shadow: 2px 2px 2px black;
+}
+
+#myButton span {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+    animation: ripple 1s;
+    opacity: 0;
+}
+
+@keyframes ripple {
+    from {
+        opacity: 1;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(10);
+    }
+}
+/* Book of the day part */
+#row {
+    background-color: white;
+    height: 390px;
+    padding-left: 40px;
+    text-align: center;
+    padding-top: 2px;
+    margin-left: 2cm;
+    margin-right: 2cm;
+    border-image: linear-gradient(45deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82) 1;
+    border-style: solid;
+}
+
+.col img {
+    width: 130px;
+    height: 150px;
+    margin: 10px;
+}
+
+#books {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.col {
+    width: 25%;
+    height: 150px;
+    padding: 10px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+.tinybooks {
+    box-shadow: 2px black;
+}
+
+.book_word {
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/* SideNav */
+/* navbar */
+
+.menu-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .links-hidden{
+    display: block;
+  }
+  
+  .dropdown-menu:hover .menu-content {
+    display: block;
+    padding: 20px 0;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    transition: color .3s .15s ease-in;
+  }
+  
+  .menu-btn {
+    background-color: #0799d3;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    text-transform: uppercase;
+  }
+  
+  .links,.links-hidden{
+  
+    color: rgb(255, 255, 255);
+    padding: 2px 6px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  
+  
+  .asideAnchor2 {
+  border-bottom: 2px solid rgba(255, 255, 255, .7);
+  border-top: 2px solid rgba(255, 255, 255, .7);
+  padding: 20px 0;
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  transition: color .3s .15s ease-in;
+  }
+  
+  .asideAnchor2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  background-color: #fff;
+  width: 0;
+  transition: width .3s ease-in;
+  z-index: -1;
+  }
+  
+  .asideAnchor2:hover {
+  color: #0799d3;
+  }
+  
+  .asideAnchor2:hover::after {
+  width: 100%;
+  }
+  
+  
+  body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  }
+  
+  main {
+  height: 100%;
+  width: 100%;
+  }
+  
+  aside {
+  background-color: #0799d3;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 20%;
+  z-index: 1;
+  }
+  
+  section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  overflow-x: hidden;
+  }
+  
+  label[for=myInput] {
+  display: inline-block;
+  padding: 7px 10px;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 10px;
+  z-index: 3;
+  position: fixed;
+  }
+  
+  .bar {
+  display: block;
+  background-color: #0799d3;
+  width: 30px;
+  height: 3px;
+  border-radius: 5px;
+  margin: 10px;
+  transition: background-color .5s ease-in, transform .5s ease-in, width .5s ease-in;
+  }
+  
+  .content {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 2;
+  transition: transform .5s ease-in-out;
+  padding: 40px 0px 0px 0px;
+  }
+  
+  h1 {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  text-align: center;
+  font-size: 40px;
+  }
+  
+  .asideList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 100px;
+  text-align: center;
+  border-top: 2px solid rgba(255, 255, 255, .7);
+  }
+  
+  .asideAnchor {
+  border-bottom: 2px solid rgba(255, 255, 255, .7);
+  padding: 20px 0;
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  transition: color .3s .15s ease-in;
+  }
+  
+  .asideAnchor::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  background-color: #fff;
+  width: 0;
+  transition: width .3s ease-in;
+  z-index: -1;
+  }
+  
+  .asideAnchor:hover {
+  color: #0799d3;
+  }
+  
+  .asideAnchor:hover::after {
+  width: 100%;
+  }
+  
+  input[type="checkbox"] {
+  display: none;
+  }
+  
+  input[type="checkbox"]:checked ~ .content {
+  transform: translateX(20%);
+  }
+  
+  input[type="checkbox"]:checked ~ label[for=myInput] .bar {
+  background-color: #fff;
+  }
+  
+  
+  .content{
+  background-color: #e8f5ff;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  
+  }
+  
+  .xwrapx{
+  position:relative;
+  overflow-x:hidden
+  }
+
+  #home {
+    font-family: 'Dancing Script';
+    padding-top: 7px;
+    }

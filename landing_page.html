@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./CSS/landing_page.css"/>
+        
+</head>
+<body>
+  <div class="xwrapx">  
+  <main>
+    <aside>
+      <ul class="asideList">
+        <li><a href="" class="asideAnchor">Home</a></li>
+        <div class="dropdown-menu">
+          <button class="menu-btn">Collections ▼</button>
+            <div class="menu-content">
+              <a class="links-hidden" href="viewbook.php">View Books</a>
+              <a class="links-hidden" href="addbook.php">Add Books</a>
+              <a class="links-hidden" href="removebook.php">Remove Books</a>
+              <a class="links-hidden" href="updatebook.php">Update Books</a>
+            </div>
+        </div>
+        <li><a href="about.html" class="asideAnchor2">About</a></li>
+        <li><a href="profile.html" class="asideAnchor">Profile</a></li>
+        <li><a href="login.html" class="asideAnchor">Login</a></li>
+        <li><a href="signup.html" class="asideAnchor">Sign Up</a></li>
+        <li><a href="settings.html" class="asideAnchor">Setting</a></li>
+          
+        </ul>
+      </aside>
+      <section>
+        <input type="checkbox" id="myInput">
+        <label for="myInput">
+          <span class="bar top"></span>
+          <span class="bar middle"></span>
+          <span class="bar bottom"></span>
+        </label>
+      
+        <div class="content">
+          <h1 id="home"> Home </h1>
+          <h1 id="welcome"> Welcome to Our Assignment </h1>
+
+
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="./Images/background/library_entrance.jpeg">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="./Images/background/library2.jpg">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="./Images/background/library3.jpg">
+        </div>
+        <div class="mySlides fade">
+            <img src="./Images/background/library4.jpg">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./Images/background/library5.jpg">
+        </div>
+          
+      </div>
+  
+  <br>
+
+      <!-- The dots/circles -->
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+      <span class="dot" onclick="currentSlide(5)"></span> 
+
+      <div id="box" class="child" >
+          <p class="box-stuff"> Here at Taylor's Library, we are equiped with the neccessary study material and environment in order to enhance our students' learning experience. </p>
+          <a href="about.html"><button id="myButton" class="box-explore"> Explore: </button></a>
+      </div>
+
+  <br>
+
+      <div id="row">
+        <h2 style="text-align:left"> Books of the Day </h2>
+        <p style="text-align:left"> Come check out some of our most popular books of the day among our students. </p>
+        <div id="books">
+          <div class="col">
+            <span>
+              <img src="./Images/background/Book1.png" class="tinybooks" alt="The Subtle Art Of Not Giving A F**k"> 
+              <p class="book_word"> The Subtle Art Of Not Giving A F**k </p>
+            </span>
+          </div>
+          <div class="col">
+            <span>
+              <img src="./Images/background/Book2.jpg" class="tinybooks" alt="How to Get A Girlfriend in 30 days">
+              <p class="book_word"> How to Get A Girlfriend in 30 days </p>
+            </span>
+          </div>
+          <div class="col">
+            <span>
+              <img src="./Images/background/Book3.jpg" class="tinybooks" alt="How It Feels to Be A Psychopath">
+              <p class="book_word"> How It Feels to Be A Psychopath </p>
+          </div>
+
+        </div> 
+      </div> 
+    </section>
+    </main>
+  </div>
+  <script src="./JavaScript/landing_page.js"></script>
+</body>
+</html>

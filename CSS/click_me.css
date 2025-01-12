@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #e8f5ff;
+  font-family: Arial;
+  overflow: scroll;
+}
+
+/* NavbarTop */
+.topbar {
+  background-color: #333;
+  color: white;
+  box-shadow: 0px 4px 8px 0px grey;
+  height: 85px;
+}
+
+.title {
+  font-family: 'Dancing Script';
+  padding-top: 15px;
+  position: absolute;
+  left: 45%;
+  font-size: x-large;
+  font-style: normal;
+  font-weight: 400;
+}
+
+
+/* container */
+.container {
+  width: 85%;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+
+}
+
+.container h2 {
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.container .card {
+  background-color: #fff;
+  border-radius: 18px;
+  box-shadow: 1px 1px 8px 0 grey;
+  height: auto;
+  margin-bottom: 20px;
+  padding: 20px 60px 30px;
+}
+
+.container .card .congratulation {
+  text-align: center;
+  font-size: 1.125em;
+}
+
+.container .card .regards {
+  text-align: right;
+}
+
+.container .card .bold {
+  font-weight: bold;
+}
+.container .card2 {
+  background-color: #fff;
+  border-radius: 18px;
+  box-shadow: 1px 1px 8px 0 grey;
+  height: auto;
+  margin-bottom: 20px;
+  padding: 20px 60px 30px;
+}
+
+.container .card2 h3, .container .card2 p {
+  margin: 10px 0px;
+}
+
+/* images */
+.hoot {
+  display: block;
+  margin: 2% auto;
+  border-radius: 45%;
+  border: 3px double darkgreen;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 15%;
+  height: 15%;
+}
+
+.thankyou {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  height: 25%;
+}
+
+/* button */
+.containerbutton {
+  margin: 20px auto;
+  text-align: center;
+}
+
+#more1 {
+  display: none;
+}
+#more2 {
+  display: none;
+}
+#more3 {
+  display: none;
+}
+
+.collapsible {
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border-radius: 25px;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+.button {
+  border-radius: 10px;
+  padding: 5px;
+  background-color: aqua;
+  border: 1px solid blue;
+}
+
+.card2 {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
